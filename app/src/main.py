@@ -14,7 +14,7 @@ server = Flask(__name__)
 server.config["TESTING"] = True
 
 prompt = """
-Here is the swagger api doc:
+Here is the api doc:
 
 {api_doc}
 

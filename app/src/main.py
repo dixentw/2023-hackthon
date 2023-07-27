@@ -7,7 +7,7 @@ from logging.config import dictConfig
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 text = ""
-with open("api-doc", "r") as f:
+with open("api-doc.md", "r") as f:
     text = f.read()
 
 server = Flask(__name__)

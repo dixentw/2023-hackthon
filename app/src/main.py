@@ -14,14 +14,19 @@ server = Flask(__name__)
 server.config["TESTING"] = True
 
 prompt = """
-Here is the api doc:
+You're a JSON generator that can output a JSON payload with the given API doc and conditions.
 
+API doc:
+```
 {api_doc}
+```
 
-generate only JSON post request body with following conditions:
-
+Conditions:
+```
 {condition}
+```
 
+Please generate a JSON payload that satisfies the conditions above.
 """
 
 @server.route("/", methods=["POST"])

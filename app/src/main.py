@@ -21,7 +21,7 @@ API doc:
 {api_doc}
 ```
 
-Conditions
+Conditions:
 ```
 {condition}
 ```
